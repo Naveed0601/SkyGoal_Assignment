@@ -9,8 +9,6 @@ const CustomerDetails = () => {
   const [totalPages, setTotalPages] = useState(0);
   const [search, setSearch] = useState("");
 
-  console.log(process.env.CustomerDetails);
-
   useEffect(() => {
     fetchCustomers();
   }, [page, search]);
